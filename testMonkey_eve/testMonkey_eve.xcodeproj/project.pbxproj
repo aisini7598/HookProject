@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28C1F189D894E8CC77799FA1 /* libPods-testMonkey_eve.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 889950C3835F1235FC05A855 /* libPods-testMonkey_eve.a */; };
+		4B3CBA9E1FF33C2800AB8542 /* MethodTraceConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B3CBA9D1FF33C2800AB8542 /* MethodTraceConfig.plist */; };
+		4B3CBAA11FF33C2800AB8542 /* put ipa or app here in Resources */ = {isa = PBXBuildFile; fileRef = 4B3CBAA01FF33C2800AB8542 /* put ipa or app here */; };
+		4B3CBAA81FF33C2800AB8542 /* libtestMonkey_eveDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B3CBAA71FF33C2800AB8542 /* libtestMonkey_eveDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4B3CBAAD1FF33C2800AB8542 /* Cycript.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3CBAAC1FF33C2800AB8542 /* Cycript.framework */; };
+		4B3CBAAF1FF33C2800AB8542 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3CBAAE1FF33C2800AB8542 /* JavaScriptCore.framework */; };
+		4B3CBAB11FF33C2800AB8542 /* RevealServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3CBAB01FF33C2800AB8542 /* RevealServer.framework */; };
+		4B3CBAB31FF33C2800AB8542 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3CBAB21FF33C2800AB8542 /* Foundation.framework */; };
+		4B3CBAB51FF33C2800AB8542 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3CBAB41FF33C2800AB8542 /* UIKit.framework */; };
+		4B3CBAB91FF33C2800AB8542 /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3CBAB81FF33C2800AB8542 /* CaptainHook.h */; };
+		4B3CBABB1FF33C2800AB8542 /* testMonkey_eveDylib-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 4B3CBABA1FF33C2800AB8542 /* testMonkey_eveDylib-Prefix.pch */; };
+		4B3CBABE1FF33C2800AB8542 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CBABD1FF33C2800AB8542 /* AntiAntiDebug.m */; };
+		4B3CBAC11FF33C2800AB8542 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CBAC01FF33C2800AB8542 /* fishhook.c */; };
+		4B3CBAC31FF33C2800AB8542 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3CBAC21FF33C2800AB8542 /* fishhook.h */; };
+		4B3CBAC51FF33C2800AB8542 /* testMonkey_eveDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3CBAC41FF33C2800AB8542 /* testMonkey_eveDylib.h */; };
+		4B3CBAC71FF33C2800AB8542 /* testMonkey_eveDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CBAC61FF33C2800AB8542 /* testMonkey_eveDylib.m */; };
+		BC8CA66540B3F18412F00986 /* libPods-testMonkey_eveDylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0345263B6C3CCA7892B3D8 /* libPods-testMonkey_eveDylib.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B3CBAA91FF33C2800AB8542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B3CBA8F1FF33C2800AB8542 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3CBAA61FF33C2800AB8542;
+			remoteInfo = testMonkey_eveDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B3CBA971FF33C2800AB8542 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B3CBAA81FF33C2800AB8542 /* libtestMonkey_eveDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03FABE146E2F6BD57A4200C8 /* Pods-testMonkey_eve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testMonkey_eve.release.xcconfig"; path = "Pods/Target Support Files/Pods-testMonkey_eve/Pods-testMonkey_eve.release.xcconfig"; sourceTree = "<group>"; };
+		132566818DDE5BD10729F100 /* Pods-testMonkey_eve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testMonkey_eve.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testMonkey_eve/Pods-testMonkey_eve.debug.xcconfig"; sourceTree = "<group>"; };
+		2123AC91BB3190985FF39907 /* Pods-testMonkey_eveDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testMonkey_eveDylib.release.xcconfig"; path = "Pods/Target Support Files/Pods-testMonkey_eveDylib/Pods-testMonkey_eveDylib.release.xcconfig"; sourceTree = "<group>"; };
+		4B3CBA9A1FF33C2800AB8542 /* testMonkey_eve.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testMonkey_eve.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3CBA9D1FF33C2800AB8542 /* MethodTraceConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MethodTraceConfig.plist; sourceTree = "<group>"; };
+		4B3CBAA01FF33C2800AB8542 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		4B3CBAA21FF33C2800AB8542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3CBAA71FF33C2800AB8542 /* libtestMonkey_eveDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtestMonkey_eveDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3CBAAC1FF33C2800AB8542 /* Cycript.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cycript.framework; path = Library/Frameworks/Cycript.framework; sourceTree = DEVELOPER_DIR; };
+		4B3CBAAE1FF33C2800AB8542 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		4B3CBAB01FF33C2800AB8542 /* RevealServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevealServer.framework; path = Library/Frameworks/RevealServer.framework; sourceTree = DEVELOPER_DIR; };
+		4B3CBAB21FF33C2800AB8542 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4B3CBAB41FF33C2800AB8542 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4B3CBAB81FF33C2800AB8542 /* CaptainHook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CaptainHook.h; path = CaptainHook/CaptainHook.h; sourceTree = "<group>"; };
+		4B3CBABA1FF33C2800AB8542 /* testMonkey_eveDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testMonkey_eveDylib-Prefix.pch"; sourceTree = "<group>"; };
+		4B3CBABD1FF33C2800AB8542 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		4B3CBAC01FF33C2800AB8542 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		4B3CBAC21FF33C2800AB8542 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		4B3CBAC41FF33C2800AB8542 /* testMonkey_eveDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testMonkey_eveDylib.h; sourceTree = "<group>"; };
+		4B3CBAC61FF33C2800AB8542 /* testMonkey_eveDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testMonkey_eveDylib.m; sourceTree = "<group>"; };
+		889950C3835F1235FC05A855 /* libPods-testMonkey_eve.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testMonkey_eve.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB990BC3B8C04903D617E964 /* Pods-testMonkey_eveDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testMonkey_eveDylib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testMonkey_eveDylib/Pods-testMonkey_eveDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		EC0345263B6C3CCA7892B3D8 /* libPods-testMonkey_eveDylib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testMonkey_eveDylib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B3CBA941FF33C2800AB8542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C1F189D894E8CC77799FA1 /* libPods-testMonkey_eve.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3CBAA41FF33C2800AB8542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3CBAAF1FF33C2800AB8542 /* JavaScriptCore.framework in Frameworks */,
+				4B3CBAB11FF33C2800AB8542 /* RevealServer.framework in Frameworks */,
+				4B3CBAAD1FF33C2800AB8542 /* Cycript.framework in Frameworks */,
+				4B3CBAB31FF33C2800AB8542 /* Foundation.framework in Frameworks */,
+				4B3CBAB51FF33C2800AB8542 /* UIKit.framework in Frameworks */,
+				BC8CA66540B3F18412F00986 /* libPods-testMonkey_eveDylib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B3CBA8E1FF33C2800AB8542 = {
+			isa = PBXGroup;
+			children = (
+				4B3CBA9C1FF33C2800AB8542 /* testMonkey_eve */,
+				4B3CBAB61FF33C2800AB8542 /* testMonkey_eveDylib */,
+				4B3CBAAB1FF33C2800AB8542 /* Frameworks */,
+				4B3CBA9B1FF33C2800AB8542 /* Products */,
+				4D63235B812FE990F9DDA7B1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4B3CBA9B1FF33C2800AB8542 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CBA9A1FF33C2800AB8542 /* testMonkey_eve.app */,
+				4B3CBAA71FF33C2800AB8542 /* libtestMonkey_eveDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B3CBA9C1FF33C2800AB8542 /* testMonkey_eve */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CBA9D1FF33C2800AB8542 /* MethodTraceConfig.plist */,
+				4B3CBAA21FF33C2800AB8542 /* Info.plist */,
+				4B3CBA9F1FF33C2800AB8542 /* TargetApp */,
+			);
+			path = testMonkey_eve;
+			sourceTree = "<group>";
+		};
+		4B3CBA9F1FF33C2800AB8542 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CBAA01FF33C2800AB8542 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		4B3CBAAB1FF33C2800AB8542 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CBAAC1FF33C2800AB8542 /* Cycript.framework */,
+				4B3CBAAE1FF33C2800AB8542 /* JavaScriptCore.framework */,
+				4B3CBAB01FF33C2800AB8542 /* RevealServer.framework */,
+				4B3CBAB21FF33C2800AB8542 /* Foundation.framework */,
+				4B3CBAB41FF33C2800AB8542 /* UIKit.framework */,
+				889950C3835F1235FC05A855 /* libPods-testMonkey_eve.a */,
+				EC0345263B6C3CCA7892B3D8 /* libPods-testMonkey_eveDylib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B3CBAB61FF33C2800AB8542 /* testMonkey_eveDylib */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CBABA1FF33C2800AB8542 /* testMonkey_eveDylib-Prefix.pch */,
+				4B3CBAC41FF33C2800AB8542 /* testMonkey_eveDylib.h */,
+				4B3CBAC61FF33C2800AB8542 /* testMonkey_eveDylib.m */,
+				4B3CBAB71FF33C2800AB8542 /* CaptainHook */,
+				4B3CBABC1FF33C2800AB8542 /* AntiAntiDebug */,
+				4B3CBABF1FF33C2800AB8542 /* fishhook */,
+			);
+			path = testMonkey_eveDylib;
+			sourceTree = "<group>";
+		};
+		4B3CBAB71FF33C2800AB8542 /* CaptainHook */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CBAB81FF33C2800AB8542 /* CaptainHook.h */,
+			);
+			name = CaptainHook;
+			sourceTree = "<group>";
+		};
+		4B3CBABC1FF33C2800AB8542 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CBABD1FF33C2800AB8542 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		4B3CBABF1FF33C2800AB8542 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				4B3CBAC01FF33C2800AB8542 /* fishhook.c */,
+				4B3CBAC21FF33C2800AB8542 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+		4D63235B812FE990F9DDA7B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				132566818DDE5BD10729F100 /* Pods-testMonkey_eve.debug.xcconfig */,
+				03FABE146E2F6BD57A4200C8 /* Pods-testMonkey_eve.release.xcconfig */,
+				EB990BC3B8C04903D617E964 /* Pods-testMonkey_eveDylib.debug.xcconfig */,
+				2123AC91BB3190985FF39907 /* Pods-testMonkey_eveDylib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4B3CBAA51FF33C2800AB8542 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3CBABB1FF33C2800AB8542 /* testMonkey_eveDylib-Prefix.pch in Headers */,
+				4B3CBAC51FF33C2800AB8542 /* testMonkey_eveDylib.h in Headers */,
+				4B3CBAB91FF33C2800AB8542 /* CaptainHook.h in Headers */,
+				4B3CBAC31FF33C2800AB8542 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4B3CBA991FF33C2800AB8542 /* testMonkey_eve */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3CBACD1FF33C2800AB8542 /* Build configuration list for PBXNativeTarget "testMonkey_eve" */;
+			buildPhases = (
+				D03D0C522CAAD478D96012F4 /* [CP] Check Pods Manifest.lock */,
+				4B3CBA931FF33C2800AB8542 /* Sources */,
+				4B3CBA941FF33C2800AB8542 /* Frameworks */,
+				4B3CBA951FF33C2800AB8542 /* ShellScript */,
+				4B3CBA961FF33C2800AB8542 /* Resources */,
+				4B3CBA971FF33C2800AB8542 /* CopyFiles */,
+				4B3CBA981FF33C2800AB8542 /* ShellScript */,
+				95327F08A85A927B7586A847 /* [CP] Embed Pods Frameworks */,
+				98EC7600DA44E4B7A077EB12 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B3CBAAA1FF33C2800AB8542 /* PBXTargetDependency */,
+			);
+			name = testMonkey_eve;
+			productName = testMonkey_eve;
+			productReference = 4B3CBA9A1FF33C2800AB8542 /* testMonkey_eve.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B3CBAA61FF33C2800AB8542 /* testMonkey_eveDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B3CBACA1FF33C2800AB8542 /* Build configuration list for PBXNativeTarget "testMonkey_eveDylib" */;
+			buildPhases = (
+				BF193FEE574AAC58B09216E4 /* [CP] Check Pods Manifest.lock */,
+				4B3CBAA31FF33C2800AB8542 /* Sources */,
+				4B3CBAA41FF33C2800AB8542 /* Frameworks */,
+				4B3CBAA51FF33C2800AB8542 /* Headers */,
+				E51A728C4C55D4DBE7FF19C4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testMonkey_eveDylib;
+			productName = testMonkey_eveDylib;
+			productReference = 4B3CBAA71FF33C2800AB8542 /* libtestMonkey_eveDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B3CBA8F1FF33C2800AB8542 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = js;
+				TargetAttributes = {
+					4B3CBA991FF33C2800AB8542 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4B3CBAA61FF33C2800AB8542 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4B3CBA921FF33C2800AB8542 /* Build configuration list for PBXProject "testMonkey_eve" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4B3CBA8E1FF33C2800AB8542;
+			productRefGroup = 4B3CBA9B1FF33C2800AB8542 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B3CBA991FF33C2800AB8542 /* testMonkey_eve */,
+				4B3CBAA61FF33C2800AB8542 /* testMonkey_eveDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B3CBA961FF33C2800AB8542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3CBAA11FF33C2800AB8542 /* put ipa or app here in Resources */,
+				4B3CBA9E1FF33C2800AB8542 /* MethodTraceConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B3CBA951FF33C2800AB8542 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		4B3CBA981FF33C2800AB8542 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		95327F08A85A927B7586A847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testMonkey_eve/Pods-testMonkey_eve-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98EC7600DA44E4B7A077EB12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testMonkey_eve/Pods-testMonkey_eve-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF193FEE574AAC58B09216E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testMonkey_eveDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D03D0C522CAAD478D96012F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testMonkey_eve-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E51A728C4C55D4DBE7FF19C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-testMonkey_eveDylib/Pods-testMonkey_eveDylib-resources.sh",
+				"${PODS_ROOT}/ZFPlayer/ZFPlayer/ZFPlayer.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZFPlayer.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-testMonkey_eveDylib/Pods-testMonkey_eveDylib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B3CBA931FF33C2800AB8542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3CBAA31FF33C2800AB8542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3CBAC11FF33C2800AB8542 /* fishhook.c in Sources */,
+				4B3CBABE1FF33C2800AB8542 /* AntiAntiDebug.m in Sources */,
+				4B3CBAC71FF33C2800AB8542 /* testMonkey_eveDylib.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B3CBAAA1FF33C2800AB8542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B3CBAA61FF33C2800AB8542 /* testMonkey_eveDylib */;
+			targetProxy = 4B3CBAA91FF33C2800AB8542 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B3CBAC81FF33C2800AB8542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4B3CBAC91FF33C2800AB8542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B3CBACB1FF33C2800AB8542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB990BC3B8C04903D617E964 /* Pods-testMonkey_eveDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86C2498V6W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testMonkey_eveDylib/testMonkey_eveDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libtestMonkey_eveDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"testMonkey_eveDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		4B3CBACC1FF33C2800AB8542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2123AC91BB3190985FF39907 /* Pods-testMonkey_eveDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 86C2498V6W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "testMonkey_eveDylib/testMonkey_eveDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libtestMonkey_eveDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"testMonkey_eveDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B3CBACE1FF33C2800AB8542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 132566818DDE5BD10729F100 /* Pods-testMonkey_eve.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZXKY75PL3W;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = testMonkey_eve/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plan.PlanEveryDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B3CBACF1FF33C2800AB8542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03FABE146E2F6BD57A4200C8 /* Pods-testMonkey_eve.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZXKY75PL3W;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = testMonkey_eve/Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plan.PlanEveryDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B3CBA921FF33C2800AB8542 /* Build configuration list for PBXProject "testMonkey_eve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3CBAC81FF33C2800AB8542 /* Debug */,
+				4B3CBAC91FF33C2800AB8542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B3CBACA1FF33C2800AB8542 /* Build configuration list for PBXNativeTarget "testMonkey_eveDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3CBACB1FF33C2800AB8542 /* Debug */,
+				4B3CBACC1FF33C2800AB8542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B3CBACD1FF33C2800AB8542 /* Build configuration list for PBXNativeTarget "testMonkey_eve" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B3CBACE1FF33C2800AB8542 /* Debug */,
+				4B3CBACF1FF33C2800AB8542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B3CBA8F1FF33C2800AB8542 /* Project object */;
+}
