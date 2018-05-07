@@ -23,6 +23,18 @@
 		4B3CBAC31FF33C2800AB8542 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3CBAC21FF33C2800AB8542 /* fishhook.h */; };
 		4B3CBAC51FF33C2800AB8542 /* testMonkey_eveDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B3CBAC41FF33C2800AB8542 /* testMonkey_eveDylib.h */; };
 		4B3CBAC71FF33C2800AB8542 /* testMonkey_eveDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B3CBAC61FF33C2800AB8542 /* testMonkey_eveDylib.m */; };
+		819DF6EF20A0580E00152609 /* DebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DF6E920A0580E00152609 /* DebugViewController.m */; };
+		819DF6F020A0580E00152609 /* DebugWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DF6EA20A0580E00152609 /* DebugWindow.h */; };
+		819DF6F120A0580E00152609 /* DebugCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DF6EB20A0580E00152609 /* DebugCenter.h */; };
+		819DF6F220A0580E00152609 /* DebugViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DF6EC20A0580E00152609 /* DebugViewController.h */; };
+		819DF6F320A0580E00152609 /* DebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DF6ED20A0580E00152609 /* DebugWindow.m */; };
+		819DF6F420A0580E00152609 /* DebugCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DF6EE20A0580E00152609 /* DebugCenter.m */; };
+		819DF6FB20A059B100152609 /* ZFDownloadedCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DF6F520A059B000152609 /* ZFDownloadedCell.h */; };
+		819DF6FC20A059B100152609 /* ZFDownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DF6F620A059B000152609 /* ZFDownloadViewController.m */; };
+		819DF6FD20A059B100152609 /* ZFDownloadedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DF6F720A059B000152609 /* ZFDownloadedCell.m */; };
+		819DF6FE20A059B100152609 /* ZFDownloadingCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DF6F820A059B000152609 /* ZFDownloadingCell.h */; };
+		819DF6FF20A059B100152609 /* ZFDownloadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DF6F920A059B000152609 /* ZFDownloadingCell.m */; };
+		819DF70020A059B100152609 /* ZFDownloadViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DF6FA20A059B100152609 /* ZFDownloadViewController.h */; };
 		BC8CA66540B3F18412F00986 /* libPods-testMonkey_eveDylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0345263B6C3CCA7892B3D8 /* libPods-testMonkey_eveDylib.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +82,25 @@
 		4B3CBAC21FF33C2800AB8542 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
 		4B3CBAC41FF33C2800AB8542 /* testMonkey_eveDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testMonkey_eveDylib.h; sourceTree = "<group>"; };
 		4B3CBAC61FF33C2800AB8542 /* testMonkey_eveDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testMonkey_eveDylib.m; sourceTree = "<group>"; };
+		819DF6E920A0580E00152609 /* DebugViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugViewController.m; sourceTree = "<group>"; };
+		819DF6EA20A0580E00152609 /* DebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugWindow.h; sourceTree = "<group>"; };
+		819DF6EB20A0580E00152609 /* DebugCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugCenter.h; sourceTree = "<group>"; };
+		819DF6EC20A0580E00152609 /* DebugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugViewController.h; sourceTree = "<group>"; };
+		819DF6ED20A0580E00152609 /* DebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugWindow.m; sourceTree = "<group>"; };
+		819DF6EE20A0580E00152609 /* DebugCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugCenter.m; sourceTree = "<group>"; };
+		819DF6F520A059B000152609 /* ZFDownloadedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDownloadedCell.h; sourceTree = "<group>"; };
+		819DF6F620A059B000152609 /* ZFDownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFDownloadViewController.m; sourceTree = "<group>"; };
+		819DF6F720A059B000152609 /* ZFDownloadedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFDownloadedCell.m; sourceTree = "<group>"; };
+		819DF6F820A059B000152609 /* ZFDownloadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDownloadingCell.h; sourceTree = "<group>"; };
+		819DF6F920A059B000152609 /* ZFDownloadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFDownloadingCell.m; sourceTree = "<group>"; };
+		819DF6FA20A059B100152609 /* ZFDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDownloadViewController.h; sourceTree = "<group>"; };
+		819DF70220A06AAC00152609 /* menu_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_play@3x.png"; sourceTree = "<group>"; };
+		819DF70320A06AAC00152609 /* menu_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_pause@2x.png"; sourceTree = "<group>"; };
+		819DF70420A06AAC00152609 /* menu_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_play@2x.png"; sourceTree = "<group>"; };
+		819DF70520A06AAC00152609 /* menu_pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_pause@3x.png"; sourceTree = "<group>"; };
+		819DF70620A06AAC00152609 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
+		819DF70720A06D1E00152609 /* ZFDownloadedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFDownloadedCell.xib; sourceTree = "<group>"; };
+		819DF70820A06D6E00152609 /* ZFDownloadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFDownloadingCell.xib; sourceTree = "<group>"; };
 		889950C3835F1235FC05A855 /* libPods-testMonkey_eve.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testMonkey_eve.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB990BC3B8C04903D617E964 /* Pods-testMonkey_eveDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testMonkey_eveDylib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testMonkey_eveDylib/Pods-testMonkey_eveDylib.debug.xcconfig"; sourceTree = "<group>"; };
 		EC0345263B6C3CCA7892B3D8 /* libPods-testMonkey_eveDylib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testMonkey_eveDylib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +186,7 @@
 		4B3CBAB61FF33C2800AB8542 /* testMonkey_eveDylib */ = {
 			isa = PBXGroup;
 			children = (
+				819DF6E820A0580E00152609 /* DownloadModule */,
 				4B3CBABA1FF33C2800AB8542 /* testMonkey_eveDylib-Prefix.pch */,
 				4B3CBAC41FF33C2800AB8542 /* testMonkey_eveDylib.h */,
 				4B3CBAC61FF33C2800AB8542 /* testMonkey_eveDylib.m */,
@@ -201,6 +233,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		819DF6E820A0580E00152609 /* DownloadModule */ = {
+			isa = PBXGroup;
+			children = (
+				819DF70620A06AAC00152609 /* file.png */,
+				819DF70320A06AAC00152609 /* menu_pause@2x.png */,
+				819DF70520A06AAC00152609 /* menu_pause@3x.png */,
+				819DF70420A06AAC00152609 /* menu_play@2x.png */,
+				819DF70220A06AAC00152609 /* menu_play@3x.png */,
+				819DF6F520A059B000152609 /* ZFDownloadedCell.h */,
+				819DF6F720A059B000152609 /* ZFDownloadedCell.m */,
+				819DF6F820A059B000152609 /* ZFDownloadingCell.h */,
+				819DF6F920A059B000152609 /* ZFDownloadingCell.m */,
+				819DF6FA20A059B100152609 /* ZFDownloadViewController.h */,
+				819DF6F620A059B000152609 /* ZFDownloadViewController.m */,
+				819DF6EC20A0580E00152609 /* DebugViewController.h */,
+				819DF6E920A0580E00152609 /* DebugViewController.m */,
+				819DF6EA20A0580E00152609 /* DebugWindow.h */,
+				819DF6EB20A0580E00152609 /* DebugCenter.h */,
+				819DF6ED20A0580E00152609 /* DebugWindow.m */,
+				819DF6EE20A0580E00152609 /* DebugCenter.m */,
+				819DF70720A06D1E00152609 /* ZFDownloadedCell.xib */,
+				819DF70820A06D6E00152609 /* ZFDownloadingCell.xib */,
+			);
+			path = DownloadModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -208,10 +266,16 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819DF6FE20A059B100152609 /* ZFDownloadingCell.h in Headers */,
+				819DF70020A059B100152609 /* ZFDownloadViewController.h in Headers */,
 				4B3CBABB1FF33C2800AB8542 /* testMonkey_eveDylib-Prefix.pch in Headers */,
+				819DF6FB20A059B100152609 /* ZFDownloadedCell.h in Headers */,
 				4B3CBAC51FF33C2800AB8542 /* testMonkey_eveDylib.h in Headers */,
+				819DF6F020A0580E00152609 /* DebugWindow.h in Headers */,
+				819DF6F120A0580E00152609 /* DebugCenter.h in Headers */,
 				4B3CBAB91FF33C2800AB8542 /* CaptainHook.h in Headers */,
 				4B3CBAC31FF33C2800AB8542 /* fishhook.h in Headers */,
+				819DF6F220A0580E00152609 /* DebugViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,8 +499,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819DF6F420A0580E00152609 /* DebugCenter.m in Sources */,
 				4B3CBAC11FF33C2800AB8542 /* fishhook.c in Sources */,
 				4B3CBABE1FF33C2800AB8542 /* AntiAntiDebug.m in Sources */,
+				819DF6FC20A059B100152609 /* ZFDownloadViewController.m in Sources */,
+				819DF6F320A0580E00152609 /* DebugWindow.m in Sources */,
+				819DF6EF20A0580E00152609 /* DebugViewController.m in Sources */,
+				819DF6FF20A059B100152609 /* ZFDownloadingCell.m in Sources */,
+				819DF6FD20A059B100152609 /* ZFDownloadedCell.m in Sources */,
 				4B3CBAC71FF33C2800AB8542 /* testMonkey_eveDylib.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +698,7 @@
 					"$(MonkeyDevTheosPath)/vendor/lib",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testMonkey_eveDylib/testMonkey_eveDylib-Prefix.pch";
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;

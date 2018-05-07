@@ -15,6 +15,10 @@
 //#import <CydiaSubstrate/CydiaSubstrate.h>
 #import <MediaPlayer/MediaPlayer.h>
 
+#import "DebugWindow.h"
+
+#import <ZFDownload/ZFDownloadManager.h>
+
 @interface CustomViewController
 
 -(NSString*)getMyName;
@@ -30,6 +34,8 @@
 - (void)setVideoUrl:(NSString *)url;
 
 - (void)download:(UIButton *)sender;
+
+- (void)playerDownload:(NSString *)url;
 
 
 @end
@@ -68,6 +74,12 @@ CHMethod(2, void, AppDelegate, application, id, arg1, didFinishLaunchingWithOpti
     CHSuper(2, AppDelegate, application, arg1, didFinishLaunchingWithOptions, arg2);
 }
 
+CHOptimizedMethod1(self, void, AppDelegate, setWindow, UIWindow *, window) {
+    DebugWindow *debugWindow = [[DebugWindow alloc] initWithFrame:window.frame];
+    ;
+    CHSuper1(AppDelegate, setWindow, debugWindow);
+}
+
 CHDeclareClass(UIPasteboard);
 CHClassMethod(0, id, UIPasteboard, generalPasteboard) {
     return nil;
@@ -90,7 +102,18 @@ CHDeclareMethod1(void, newVideoPlayViewController, download, UIButton *, sender)
     }
     
     NSString *videoUrl = [(newVideoPlayViewController *)obj videoUrl];
+    [self playerDownload:videoUrl];
 }
+
+CHDeclareMethod1(void, newVideoPlayViewController, playerDownload, NSString *, url) {
+    
+    NSString *name = [url lastPathComponent];
+    [[ZFDownloadManager sharedDownloadManager] downFileUrl:url filename:name fileimage:nil];
+    // 设置最多同时下载个数（默认是3）
+    [ZFDownloadManager sharedDownloadManager].maxCount = 4;
+}
+
+
 
 CHOptimizedMethod3(self, id, newVideoPlayViewController, initWithUrl, NSString *, arg1, VideoType, id, arg2, data, id, arg3) {
     id obj = CHSuper3(newVideoPlayViewController, initWithUrl, arg1, VideoType, arg2, data, arg3);
@@ -163,6 +186,7 @@ static __attribute__((constructor)) void entry(){
     CHLoadLateClass(AppDelegate);
     //hook application:didFinishLaunchingWithOptions:方法
     CHClassHook(2, AppDelegate, application, didFinishLaunchingWithOptions);
+    CHClassHook1(AppDelegate, setWindow);
     
     //加载AD_dataManager类
     CHLoadLateClass(AD_dataManager);
