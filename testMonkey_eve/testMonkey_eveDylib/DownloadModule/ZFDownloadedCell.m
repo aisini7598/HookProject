@@ -25,9 +25,38 @@
 
 @implementation ZFDownloadedCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        UILabel *firstNameLabel = [[UILabel alloc] init];
+        firstNameLabel.font = [UIFont systemFontOfSize:11];
+        firstNameLabel.backgroundColor = [UIColor clearColor];
+        firstNameLabel.textColor = [UIColor blackColor];
+        [self.contentView addSubview:firstNameLabel];
+        _fileNameLabel = firstNameLabel;
+        
+        UILabel *sizeLabel = [[UILabel alloc] init];
+        sizeLabel.font = [UIFont systemFontOfSize:11];
+        sizeLabel.textColor = [UIColor blackColor];
+        sizeLabel.backgroundColor = [UIColor clearColor];
+        [self.contentView addSubview:sizeLabel];
+        _sizeLabel = sizeLabel;
+        
+    }
+    return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    [self.fileNameLabel sizeToFit];
+    
+    self.fileNameLabel.center = CGPointMake(10 + self.fileNameLabel.frame.size.width / 2, self.frame.size.height / 2);
+    
+    
+    [self.sizeLabel sizeToFit];
+    
+    self.sizeLabel.center = CGPointMake(self.frame.size.width - 10 - self.sizeLabel.frame.size.width / 2, self.frame.size.height / 2);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

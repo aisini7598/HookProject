@@ -35,8 +35,9 @@
 
 - (void)download:(UIButton *)sender;
 
-- (void)playerDownload:(NSString *)url;
+- (void)playerDownload:(NSString *)url withVideoName:(NSString *)videoName;
 
+@property (nonatomic, copy) NSString *videoName;
 
 @end
 
@@ -92,6 +93,9 @@ CHClassMethod(0, id, AD_dataManager, shareInstance) {
 
 CHDeclareClass(newVideoPlayViewController);
 
+
+
+
 CHDeclareMethod1(void, newVideoPlayViewController, download, UIButton *, sender) {
     NSLog(@"click me");
     
@@ -102,12 +106,11 @@ CHDeclareMethod1(void, newVideoPlayViewController, download, UIButton *, sender)
     }
     
     NSString *videoUrl = [(newVideoPlayViewController *)obj videoUrl];
-    [self playerDownload:videoUrl];
+    [self playerDownload:videoUrl withVideoName:self.videoName];
 }
 
-CHDeclareMethod1(void, newVideoPlayViewController, playerDownload, NSString *, url) {
-    
-    NSString *name = [url lastPathComponent];
+CHDeclareMethod2(void, newVideoPlayViewController, playerDownload, NSString *, url, withVideoName, NSString *, fileName) {
+    NSString *name = fileName;
     [[ZFDownloadManager sharedDownloadManager] downFileUrl:url filename:name fileimage:nil];
     // 设置最多同时下载个数（默认是3）
     [ZFDownloadManager sharedDownloadManager].maxCount = 4;
@@ -118,6 +121,7 @@ CHDeclareMethod1(void, newVideoPlayViewController, playerDownload, NSString *, u
 CHOptimizedMethod3(self, id, newVideoPlayViewController, initWithUrl, NSString *, arg1, VideoType, id, arg2, data, id, arg3) {
     id obj = CHSuper3(newVideoPlayViewController, initWithUrl, arg1, VideoType, arg2, data, arg3);
     [self setVideoUrl:arg1];
+    [self setVideoName:[arg3 title]];
     return obj;
 }
 
@@ -164,6 +168,8 @@ CHOptimizedMethod0(self, void, newVideoPlayViewController, viewDidLoad) {
 }
 
 
+CHPropertyCopyNonatomic(newVideoPlayViewController, NSString *, videoName, setVideoName);
+
 static __attribute__((constructor)) void entry(){
     NSLog(@"\n               🎉!!！congratulations!!！🎉\n👍----------------insert dylib success----------------👍");
     
@@ -197,9 +203,15 @@ static __attribute__((constructor)) void entry(){
     CHLoadLateClass(UIPasteboard);
     //hook +[UIPasteboard generalPasteboard]方法
     CHClassHook0(UIPasteboard, generalPasteboard);
-    
+}
+
+CHConstructor {
     CHLoadLateClass(newVideoPlayViewController);
     CHClassHook0(newVideoPlayViewController, viewDidLoad);
     CHClassHook3(newVideoPlayViewController, initWithUrl, VideoType, data);
+    
+    CHHook0(newVideoPlayViewController, videoName);
+    CHHook1(newVideoPlayViewController, setVideoName);
 }
+
 

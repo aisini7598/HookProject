@@ -29,8 +29,68 @@
 
 @implementation ZFDownloadingCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        UILabel *fileNameLabel = [[UILabel alloc] init];
+        fileNameLabel.font = [UIFont systemFontOfSize:13];
+        fileNameLabel.textColor = [UIColor blackColor];
+        fileNameLabel.backgroundColor = [UIColor clearColor];
+        [self.contentView addSubview:fileNameLabel];
+        _fileNameLabel = fileNameLabel;
+        
+        UIProgressView *progressView = [[UIProgressView alloc] init];
+        progressView.progress = 0;
+        progressView.progressTintColor = [UIColor orangeColor];
+        progressView.backgroundColor = [UIColor clearColor];
+        
+        [self.contentView addSubview:progressView];
+        
+        _progress = progressView;
+        
+        UILabel *downloadLabel = [[UILabel alloc] init];
+        downloadLabel.font = [UIFont systemFontOfSize:13];
+        downloadLabel.textColor = [UIColor blackColor];
+        downloadLabel.backgroundColor = [UIColor clearColor];
+        [self.contentView addSubview:downloadLabel];
+        _progressLabel = downloadLabel;
+        
+        UILabel *speedLabel = [[UILabel alloc] init];
+        speedLabel.font = [UIFont systemFontOfSize:13];
+        speedLabel.textColor = [UIColor blackColor];
+        speedLabel.backgroundColor = [UIColor clearColor];
+        [self.contentView addSubview:speedLabel];
+        _speedLabel = speedLabel;
+        
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [button setImage:[UIImage imageNamed:@"menu_pause"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"menu_play"] forState:UIControlStateSelected];
+        
+        button.bounds = CGRectMake(0, 0, 30, 30);
+        
+        [self.contentView addSubview:button];
+        
+        _downloadBtn = button;
+        
+        [button addTarget:self action:@selector(clickDownload:) forControlEvents:UIControlEventTouchUpInside];
+        
+    }
+    return self;
+}
+
+- (void)layoutSubviews {
+    
+    [self.fileNameLabel sizeToFit];
+    self.fileNameLabel.frame = CGRectMake(10, 10, self.fileNameLabel.bounds.size.width, self.fileNameLabel.bounds.size.height);
+    self.progressLabel.frame = CGRectMake(10, self.frame.size.height / 2 - 1, self.frame.size.width - 30 - 30, 2);
+    
+    [self.progressLabel sizeToFit];
+    self.progressLabel.frame = CGRectMake(10, self.frame.size.height / 2 + 10, self.progressLabel.bounds.size.width, self.progressLabel.bounds.size.height);
+    
+    self.downloadBtn.frame = CGRectMake(self.frame.size.width - 40, (self.frame.size.height - 30) / 2, 30, 30);
+    
+    [self.speedLabel sizeToFit];
+    
+    self.speedLabel.frame = CGRectMake(CGRectGetMaxX(self.progressLabel.frame) - self.speedLabel.frame.size.width, CGRectGetMaxY(self.progressLabel.frame) + 10, self.speedLabel.frame.size.width, self.speedLabel.frame.size.height);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -44,7 +104,7 @@
  *
  *  @param sender UIButton
  */
-- (IBAction)clickDownload:(UIButton *)sender {
+- (void)clickDownload:(UIButton *)sender {
     // 执行操作过程中应该禁止该按键的响应 否则会引起异常
     sender.userInteractionEnabled = NO;
     ZFFileModel *downFile = self.fileInfo;
@@ -108,6 +168,8 @@
         self.downloadBtn.selected = YES;
         self.speedLabel.text = @"错误";
     }
+    
+    [self setNeedsLayout];
 }
 
 @end

@@ -35,6 +35,11 @@
 		819DF6FE20A059B100152609 /* ZFDownloadingCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DF6F820A059B000152609 /* ZFDownloadingCell.h */; };
 		819DF6FF20A059B100152609 /* ZFDownloadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 819DF6F920A059B000152609 /* ZFDownloadingCell.m */; };
 		819DF70020A059B100152609 /* ZFDownloadViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 819DF6FA20A059B100152609 /* ZFDownloadViewController.h */; };
+		819DF71C20A145C400152609 /* menu_play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 819DF71520A145C300152609 /* menu_play@3x.png */; };
+		819DF71D20A145C400152609 /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = 819DF71620A145C300152609 /* file.png */; };
+		819DF71E20A145C400152609 /* menu_pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 819DF71720A145C300152609 /* menu_pause@3x.png */; };
+		819DF71F20A145C400152609 /* menu_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 819DF71820A145C400152609 /* menu_play@2x.png */; };
+		819DF72020A145C400152609 /* menu_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 819DF71920A145C400152609 /* menu_pause@2x.png */; };
 		BC8CA66540B3F18412F00986 /* libPods-testMonkey_eveDylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0345263B6C3CCA7892B3D8 /* libPods-testMonkey_eveDylib.a */; };
 /* End PBXBuildFile section */
 
@@ -94,13 +99,11 @@
 		819DF6F820A059B000152609 /* ZFDownloadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDownloadingCell.h; sourceTree = "<group>"; };
 		819DF6F920A059B000152609 /* ZFDownloadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFDownloadingCell.m; sourceTree = "<group>"; };
 		819DF6FA20A059B100152609 /* ZFDownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDownloadViewController.h; sourceTree = "<group>"; };
-		819DF70220A06AAC00152609 /* menu_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_play@3x.png"; sourceTree = "<group>"; };
-		819DF70320A06AAC00152609 /* menu_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_pause@2x.png"; sourceTree = "<group>"; };
-		819DF70420A06AAC00152609 /* menu_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_play@2x.png"; sourceTree = "<group>"; };
-		819DF70520A06AAC00152609 /* menu_pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_pause@3x.png"; sourceTree = "<group>"; };
-		819DF70620A06AAC00152609 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
-		819DF70720A06D1E00152609 /* ZFDownloadedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFDownloadedCell.xib; sourceTree = "<group>"; };
-		819DF70820A06D6E00152609 /* ZFDownloadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFDownloadingCell.xib; sourceTree = "<group>"; };
+		819DF71520A145C300152609 /* menu_play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_play@3x.png"; sourceTree = "<group>"; };
+		819DF71620A145C300152609 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
+		819DF71720A145C300152609 /* menu_pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_pause@3x.png"; sourceTree = "<group>"; };
+		819DF71820A145C400152609 /* menu_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_play@2x.png"; sourceTree = "<group>"; };
+		819DF71920A145C400152609 /* menu_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu_pause@2x.png"; sourceTree = "<group>"; };
 		889950C3835F1235FC05A855 /* libPods-testMonkey_eve.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testMonkey_eve.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB990BC3B8C04903D617E964 /* Pods-testMonkey_eveDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testMonkey_eveDylib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-testMonkey_eveDylib/Pods-testMonkey_eveDylib.debug.xcconfig"; sourceTree = "<group>"; };
 		EC0345263B6C3CCA7892B3D8 /* libPods-testMonkey_eveDylib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-testMonkey_eveDylib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +157,11 @@
 		4B3CBA9C1FF33C2800AB8542 /* testMonkey_eve */ = {
 			isa = PBXGroup;
 			children = (
+				819DF71620A145C300152609 /* file.png */,
+				819DF71920A145C400152609 /* menu_pause@2x.png */,
+				819DF71720A145C300152609 /* menu_pause@3x.png */,
+				819DF71820A145C400152609 /* menu_play@2x.png */,
+				819DF71520A145C300152609 /* menu_play@3x.png */,
 				4B3CBA9D1FF33C2800AB8542 /* MethodTraceConfig.plist */,
 				4B3CBAA21FF33C2800AB8542 /* Info.plist */,
 				4B3CBA9F1FF33C2800AB8542 /* TargetApp */,
@@ -236,11 +244,6 @@
 		819DF6E820A0580E00152609 /* DownloadModule */ = {
 			isa = PBXGroup;
 			children = (
-				819DF70620A06AAC00152609 /* file.png */,
-				819DF70320A06AAC00152609 /* menu_pause@2x.png */,
-				819DF70520A06AAC00152609 /* menu_pause@3x.png */,
-				819DF70420A06AAC00152609 /* menu_play@2x.png */,
-				819DF70220A06AAC00152609 /* menu_play@3x.png */,
 				819DF6F520A059B000152609 /* ZFDownloadedCell.h */,
 				819DF6F720A059B000152609 /* ZFDownloadedCell.m */,
 				819DF6F820A059B000152609 /* ZFDownloadingCell.h */,
@@ -253,8 +256,6 @@
 				819DF6EB20A0580E00152609 /* DebugCenter.h */,
 				819DF6ED20A0580E00152609 /* DebugWindow.m */,
 				819DF6EE20A0580E00152609 /* DebugCenter.m */,
-				819DF70720A06D1E00152609 /* ZFDownloadedCell.xib */,
-				819DF70820A06D6E00152609 /* ZFDownloadingCell.xib */,
 			);
 			path = DownloadModule;
 			sourceTree = "<group>";
@@ -369,6 +370,11 @@
 			files = (
 				4B3CBAA11FF33C2800AB8542 /* put ipa or app here in Resources */,
 				4B3CBA9E1FF33C2800AB8542 /* MethodTraceConfig.plist in Resources */,
+				819DF71E20A145C400152609 /* menu_pause@3x.png in Resources */,
+				819DF71C20A145C400152609 /* menu_play@3x.png in Resources */,
+				819DF71D20A145C400152609 /* file.png in Resources */,
+				819DF71F20A145C400152609 /* menu_play@2x.png in Resources */,
+				819DF72020A145C400152609 /* menu_pause@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -745,7 +751,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MONKEYDEV_CLASS_DUMP = NO;
-				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plan.PlanEveryDay;
@@ -767,7 +773,7 @@
 					"$(PROJECT_DIR)",
 				);
 				MONKEYDEV_CLASS_DUMP = NO;
-				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
 				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plan.PlanEveryDay;

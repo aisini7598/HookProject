@@ -71,14 +71,14 @@
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, -49, 0);
     DownloadManager.downloadDelegate = self;
 
+    
+//    [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadedCell" bundle:nil] forCellReuseIdentifier:@"downloadedCell"];
+    
+//    [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadingCell" bundle:nil] forCellReuseIdentifier:@"downloadingCell"];
+    
+    [self.tableView registerClass:[ZFDownloadedCell class] forCellReuseIdentifier:@"downloadedCell"];
 
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadedCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"downloadedCell"];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadingCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"downloadingCell"];
-    
-//    [self.tableView registerClass:[ZFDownloadedCell class] forCellReuseIdentifier:@"downloadedCell"];
-//
-//    [self.tableView registerClass:[ZFDownloadingCell class] forCellReuseIdentifier:@"downloadingCell"];
+    [self.tableView registerClass:[ZFDownloadingCell class] forCellReuseIdentifier:@"downloadingCell"];
     
 }
 
