@@ -12,6 +12,8 @@ PODS:
     - Reachability
   - ASIHTTPRequest/S3 (1.8.2):
     - ASIHTTPRequest/Core
+  - CocoaAsyncSocket (7.6.2)
+  - GDataXMLNode2 (2.0.1)
   - Masonry (1.1.0)
   - Reachability (3.2)
   - ZFDownload (1.0.2):
@@ -20,16 +22,20 @@ PODS:
     - Masonry
 
 DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.6.2)
+  - GDataXMLNode2 (~> 2.0.1)
   - ZFDownload (~> 1.0.2)
   - ZFPlayer
 
 SPEC CHECKSUMS:
   ASIHTTPRequest: ec013992946676b7978dcbde6396d57312d21db4
+  CocoaAsyncSocket: 3541e024f48c54b251638ef72d51dd42808de932
+  GDataXMLNode2: 90a3f2cd1f041aa5f43062eec884e0943704bf81
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   ZFDownload: a52f94ebb080833b8a8ceb19a409f2941343fe7f
   ZFPlayer: 833cb3974b619bfd01a0ec1ebaabfe6f629e85b4
 
-PODFILE CHECKSUM: 505f98eda9f119d3c758833201ba0a2adeff05a5
+PODFILE CHECKSUM: 170021e7d7a305830a0ece143caba64dd7c5c0a1
 
 COCOAPODS: 1.4.0

@@ -70,8 +70,9 @@
     self.tableView.tableFooterView = [UIView new];
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, -49, 0);
     DownloadManager.downloadDelegate = self;
-
-
+    
+    
+    
     [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadedCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"downloadedCell"];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadingCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"downloadingCell"];

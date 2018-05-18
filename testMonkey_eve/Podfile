@@ -14,8 +14,9 @@ target 'testMonkey_eveDylib' do
   # use_frameworks!
   pod 'ZFPlayer'
   pod 'ZFDownload', '~> 1.0.2'
-  # Pods for testMonkey_eveDylib
-
+  pod 'GDataXMLNode2', '~> 2.0.1'
+pod 'CocoaAsyncSocket', '~> 7.6.2' 
+ # Pods for testMonkey_eveDylib 
 end
 
 post_install do |installer|
