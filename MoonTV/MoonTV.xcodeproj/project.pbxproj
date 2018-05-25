@@ -1,0 +1,749 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		810D523220B81AC50061BC2D /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 810D523120B81AC50061BC2D /* MDConfig.plist */; };
+		810D523C20B81AC50061BC2D /* libMoonTVDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 810D523B20B81AC50061BC2D /* libMoonTVDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		810D524120B81AC50061BC2D /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810D524020B81AC50061BC2D /* JavaScriptCore.framework */; };
+		810D524320B81AC50061BC2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810D524220B81AC50061BC2D /* Foundation.framework */; };
+		810D524520B81AC50061BC2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 810D524420B81AC50061BC2D /* UIKit.framework */; };
+		810D524A20B81AC50061BC2D /* MoonTVDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 810D524920B81AC50061BC2D /* MoonTVDylib.mm */; };
+		810D524D20B81AC50061BC2D /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 810D524C20B81AC50061BC2D /* MDConfigManager.h */; };
+		810D524F20B81AC50061BC2D /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D524E20B81AC50061BC2D /* MDConfigManager.m */; };
+		810D525120B81AC50061BC2D /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 810D525020B81AC50061BC2D /* MDCycriptManager.h */; };
+		810D525320B81AC50061BC2D /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D525220B81AC50061BC2D /* MDCycriptManager.m */; };
+		810D525520B81AC50061BC2D /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 810D525420B81AC50061BC2D /* MDMethodTrace.h */; };
+		810D525720B81AC50061BC2D /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D525620B81AC50061BC2D /* MDMethodTrace.m */; };
+		810D525920B81AC50061BC2D /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 810D525820B81AC50061BC2D /* ANYMethodLog.h */; };
+		810D525B20B81AC50061BC2D /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D525A20B81AC50061BC2D /* ANYMethodLog.m */; };
+		810D525E20B81AC50061BC2D /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 810D525D20B81AC50061BC2D /* LLDBTools.h */; };
+		810D526020B81AC50061BC2D /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 810D525F20B81AC50061BC2D /* LLDBTools.mm */; };
+		810D526520B81AC50061BC2D /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D526420B81AC50061BC2D /* AntiAntiDebug.m */; };
+		810D526820B81AC50061BC2D /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 810D526720B81AC50061BC2D /* fishhook.c */; };
+		810D526A20B81AC50061BC2D /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 810D526920B81AC50061BC2D /* fishhook.h */; };
+		810D526C20B81AC50061BC2D /* MoonTVDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 810D526B20B81AC50061BC2D /* MoonTVDylib.h */; };
+		810D526E20B81AC50061BC2D /* MoonTVDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D526D20B81AC50061BC2D /* MoonTVDylib.m */; };
+		810D528320B825860061BC2D /* PFHostSwitcherURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 810D527F20B825860061BC2D /* PFHostSwitcherURLProtocol.h */; };
+		810D528420B825860061BC2D /* NSObject+fullDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D528020B825860061BC2D /* NSObject+fullDescription.m */; };
+		810D528520B825860061BC2D /* PFHostSwitcherURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 810D528120B825860061BC2D /* PFHostSwitcherURLProtocol.m */; };
+		810D528620B825860061BC2D /* NSObject+fullDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 810D528220B825860061BC2D /* NSObject+fullDescription.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		810D523D20B81AC50061BC2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 810D521E20B81AC50061BC2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 810D523A20B81AC50061BC2D;
+			remoteInfo = MoonTVDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		810D522620B81AC50061BC2D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				810D523C20B81AC50061BC2D /* libMoonTVDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		810D522920B81AC50061BC2D /* MoonTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		810D522C20B81AC50061BC2D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		810D522D20B81AC50061BC2D /* Target.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Target.plist; sourceTree = "<group>"; };
+		810D522F20B81AC50061BC2D /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		810D523120B81AC50061BC2D /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		810D523420B81AC50061BC2D /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		810D523520B81AC50061BC2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		810D523B20B81AC50061BC2D /* libMoonTVDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMoonTVDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		810D524020B81AC50061BC2D /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		810D524220B81AC50061BC2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		810D524420B81AC50061BC2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		810D524820B81AC50061BC2D /* MoonTVDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = MoonTVDylib.xm; path = Logos/MoonTVDylib.xm; sourceTree = "<group>"; };
+		810D524920B81AC50061BC2D /* MoonTVDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = MoonTVDylib.mm; path = Logos/MoonTVDylib.mm; sourceTree = "<group>"; };
+		810D524C20B81AC50061BC2D /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		810D524E20B81AC50061BC2D /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		810D525020B81AC50061BC2D /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		810D525220B81AC50061BC2D /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		810D525420B81AC50061BC2D /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		810D525620B81AC50061BC2D /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		810D525820B81AC50061BC2D /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = Config/ANYMethodLog.h; sourceTree = "<group>"; };
+		810D525A20B81AC50061BC2D /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = Config/ANYMethodLog.m; sourceTree = "<group>"; };
+		810D525D20B81AC50061BC2D /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		810D525F20B81AC50061BC2D /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		810D526220B81AC50061BC2D /* MoonTVDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MoonTVDylib-Prefix.pch"; sourceTree = "<group>"; };
+		810D526420B81AC50061BC2D /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		810D526720B81AC50061BC2D /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		810D526920B81AC50061BC2D /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		810D526B20B81AC50061BC2D /* MoonTVDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoonTVDylib.h; sourceTree = "<group>"; };
+		810D526D20B81AC50061BC2D /* MoonTVDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoonTVDylib.m; sourceTree = "<group>"; };
+		810D527F20B825860061BC2D /* PFHostSwitcherURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFHostSwitcherURLProtocol.h; sourceTree = "<group>"; };
+		810D528020B825860061BC2D /* NSObject+fullDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+fullDescription.m"; sourceTree = "<group>"; };
+		810D528120B825860061BC2D /* PFHostSwitcherURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFHostSwitcherURLProtocol.m; sourceTree = "<group>"; };
+		810D528220B825860061BC2D /* NSObject+fullDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+fullDescription.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		810D522320B81AC50061BC2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810D523820B81AC50061BC2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810D524120B81AC50061BC2D /* JavaScriptCore.framework in Frameworks */,
+				810D524520B81AC50061BC2D /* UIKit.framework in Frameworks */,
+				810D524320B81AC50061BC2D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		810D521D20B81AC50061BC2D = {
+			isa = PBXGroup;
+			children = (
+				810D522B20B81AC50061BC2D /* MoonTV */,
+				810D524620B81AC50061BC2D /* MoonTVDylib */,
+				810D523F20B81AC50061BC2D /* Frameworks */,
+				810D522A20B81AC50061BC2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		810D522A20B81AC50061BC2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				810D522920B81AC50061BC2D /* MoonTV.app */,
+				810D523B20B81AC50061BC2D /* libMoonTVDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		810D522B20B81AC50061BC2D /* MoonTV */ = {
+			isa = PBXGroup;
+			children = (
+				810D522C20B81AC50061BC2D /* icon.png */,
+				810D522D20B81AC50061BC2D /* Target.plist */,
+				810D523520B81AC50061BC2D /* Info.plist */,
+				810D522E20B81AC50061BC2D /* Scripts */,
+				810D523020B81AC50061BC2D /* Config */,
+				810D523320B81AC50061BC2D /* TargetApp */,
+			);
+			path = MoonTV;
+			sourceTree = "<group>";
+		};
+		810D522E20B81AC50061BC2D /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				810D522F20B81AC50061BC2D /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		810D523020B81AC50061BC2D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				810D523120B81AC50061BC2D /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		810D523320B81AC50061BC2D /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				810D523420B81AC50061BC2D /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		810D523F20B81AC50061BC2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				810D524020B81AC50061BC2D /* JavaScriptCore.framework */,
+				810D524220B81AC50061BC2D /* Foundation.framework */,
+				810D524420B81AC50061BC2D /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		810D524620B81AC50061BC2D /* MoonTVDylib */ = {
+			isa = PBXGroup;
+			children = (
+				810D528220B825860061BC2D /* NSObject+fullDescription.h */,
+				810D528020B825860061BC2D /* NSObject+fullDescription.m */,
+				810D527F20B825860061BC2D /* PFHostSwitcherURLProtocol.h */,
+				810D528120B825860061BC2D /* PFHostSwitcherURLProtocol.m */,
+				810D526B20B81AC50061BC2D /* MoonTVDylib.h */,
+				810D526D20B81AC50061BC2D /* MoonTVDylib.m */,
+				810D524720B81AC50061BC2D /* Logos */,
+				810D524B20B81AC50061BC2D /* Config */,
+				810D525C20B81AC50061BC2D /* Tools */,
+				810D526320B81AC50061BC2D /* AntiAntiDebug */,
+				810D526620B81AC50061BC2D /* fishhook */,
+				810D526120B81AC50061BC2D /* Supporting Files */,
+			);
+			path = MoonTVDylib;
+			sourceTree = "<group>";
+		};
+		810D524720B81AC50061BC2D /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				810D524820B81AC50061BC2D /* MoonTVDylib.xm */,
+				810D524920B81AC50061BC2D /* MoonTVDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		810D524B20B81AC50061BC2D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				810D524C20B81AC50061BC2D /* MDConfigManager.h */,
+				810D524E20B81AC50061BC2D /* MDConfigManager.m */,
+				810D525020B81AC50061BC2D /* MDCycriptManager.h */,
+				810D525220B81AC50061BC2D /* MDCycriptManager.m */,
+				810D525420B81AC50061BC2D /* MDMethodTrace.h */,
+				810D525620B81AC50061BC2D /* MDMethodTrace.m */,
+				810D525820B81AC50061BC2D /* ANYMethodLog.h */,
+				810D525A20B81AC50061BC2D /* ANYMethodLog.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		810D525C20B81AC50061BC2D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				810D525D20B81AC50061BC2D /* LLDBTools.h */,
+				810D525F20B81AC50061BC2D /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		810D526120B81AC50061BC2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				810D526220B81AC50061BC2D /* MoonTVDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		810D526320B81AC50061BC2D /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				810D526420B81AC50061BC2D /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		810D526620B81AC50061BC2D /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				810D526720B81AC50061BC2D /* fishhook.c */,
+				810D526920B81AC50061BC2D /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		810D523920B81AC50061BC2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810D525120B81AC50061BC2D /* MDCycriptManager.h in Headers */,
+				810D525520B81AC50061BC2D /* MDMethodTrace.h in Headers */,
+				810D525E20B81AC50061BC2D /* LLDBTools.h in Headers */,
+				810D528320B825860061BC2D /* PFHostSwitcherURLProtocol.h in Headers */,
+				810D526C20B81AC50061BC2D /* MoonTVDylib.h in Headers */,
+				810D528620B825860061BC2D /* NSObject+fullDescription.h in Headers */,
+				810D524D20B81AC50061BC2D /* MDConfigManager.h in Headers */,
+				810D525920B81AC50061BC2D /* ANYMethodLog.h in Headers */,
+				810D526A20B81AC50061BC2D /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		810D522820B81AC50061BC2D /* MoonTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 810D527420B81AC60061BC2D /* Build configuration list for PBXNativeTarget "MoonTV" */;
+			buildPhases = (
+				810D522220B81AC50061BC2D /* Sources */,
+				810D522320B81AC50061BC2D /* Frameworks */,
+				810D522420B81AC50061BC2D /* ShellScript */,
+				810D522520B81AC50061BC2D /* Resources */,
+				810D522620B81AC50061BC2D /* CopyFiles */,
+				810D522720B81AC50061BC2D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				810D523E20B81AC50061BC2D /* PBXTargetDependency */,
+			);
+			name = MoonTV;
+			productName = MoonTV;
+			productReference = 810D522920B81AC50061BC2D /* MoonTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		810D523A20B81AC50061BC2D /* MoonTVDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 810D527120B81AC60061BC2D /* Build configuration list for PBXNativeTarget "MoonTVDylib" */;
+			buildPhases = (
+				810D523620B81AC50061BC2D /* ShellScript */,
+				810D523720B81AC50061BC2D /* Sources */,
+				810D523820B81AC50061BC2D /* Frameworks */,
+				810D523920B81AC50061BC2D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoonTVDylib;
+			productName = MoonTVDylib;
+			productReference = 810D523B20B81AC50061BC2D /* libMoonTVDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		810D521E20B81AC50061BC2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = john;
+				TargetAttributes = {
+					810D522820B81AC50061BC2D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					810D523A20B81AC50061BC2D = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 810D522120B81AC50061BC2D /* Build configuration list for PBXProject "MoonTV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 810D521D20B81AC50061BC2D;
+			productRefGroup = 810D522A20B81AC50061BC2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				810D522820B81AC50061BC2D /* MoonTV */,
+				810D523A20B81AC50061BC2D /* MoonTVDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		810D522520B81AC50061BC2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810D523220B81AC50061BC2D /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		810D522420B81AC50061BC2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		810D522720B81AC50061BC2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		810D523620B81AC50061BC2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		810D522220B81AC50061BC2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810D523720B81AC50061BC2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810D528520B825860061BC2D /* PFHostSwitcherURLProtocol.m in Sources */,
+				810D525320B81AC50061BC2D /* MDCycriptManager.m in Sources */,
+				810D525B20B81AC50061BC2D /* ANYMethodLog.m in Sources */,
+				810D524F20B81AC50061BC2D /* MDConfigManager.m in Sources */,
+				810D526E20B81AC50061BC2D /* MoonTVDylib.m in Sources */,
+				810D526020B81AC50061BC2D /* LLDBTools.mm in Sources */,
+				810D528420B825860061BC2D /* NSObject+fullDescription.m in Sources */,
+				810D524A20B81AC50061BC2D /* MoonTVDylib.mm in Sources */,
+				810D525720B81AC50061BC2D /* MDMethodTrace.m in Sources */,
+				810D526820B81AC50061BC2D /* fishhook.c in Sources */,
+				810D526520B81AC50061BC2D /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		810D523E20B81AC50061BC2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 810D523A20B81AC50061BC2D /* MoonTVDylib */;
+			targetProxy = 810D523D20B81AC50061BC2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		810D526F20B81AC50061BC2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		810D527020B81AC50061BC2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		810D527220B81AC60061BC2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZXKY75PL3W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoonTVDylib/MoonTVDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MoonTV/Target.plist";
+				INSTALL_PATH = "@executable_path/Frameworks/libMoonTVDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MoonTVDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		810D527320B81AC60061BC2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = ZXKY75PL3W;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MoonTVDylib/MoonTVDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MoonTV/Target.plist";
+				INSTALL_PATH = "@executable_path/Frameworks/libMoonTVDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MoonTVDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		810D527520B81AC60061BC2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZXKY75PL3W;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MoonTV/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaiscool.v;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		810D527620B81AC60061BC2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZXKY75PL3W;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MoonTV/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaiscool.v;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		810D522120B81AC50061BC2D /* Build configuration list for PBXProject "MoonTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				810D526F20B81AC50061BC2D /* Debug */,
+				810D527020B81AC50061BC2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		810D527120B81AC60061BC2D /* Build configuration list for PBXNativeTarget "MoonTVDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				810D527220B81AC60061BC2D /* Debug */,
+				810D527320B81AC60061BC2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		810D527420B81AC60061BC2D /* Build configuration list for PBXNativeTarget "MoonTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				810D527520B81AC60061BC2D /* Debug */,
+				810D527620B81AC60061BC2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 810D521E20B81AC50061BC2D /* Project object */;
+}
