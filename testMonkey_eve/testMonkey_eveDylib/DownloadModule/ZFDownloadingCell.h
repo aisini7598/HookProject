@@ -28,11 +28,11 @@ typedef void(^ZFBtnClickBlock)(void);
 
 @interface ZFDownloadingCell : UITableViewCell
 
-@property (weak, nonatomic  ) IBOutlet UILabel          *fileNameLabel;
-@property (weak, nonatomic  ) IBOutlet UIProgressView   *progress;
-@property (weak, nonatomic  ) IBOutlet UILabel          *progressLabel;
-@property (weak, nonatomic  ) IBOutlet UILabel          *speedLabel;
-@property (weak, nonatomic  ) IBOutlet UIButton         *downloadBtn;
+@property (weak, nonatomic  )  UILabel          *fileNameLabel;
+@property (weak, nonatomic  )  UIProgressView   *progress;
+@property (weak, nonatomic  )  UILabel          *progressLabel;
+@property (weak, nonatomic  )  UILabel          *speedLabel;
+@property (weak, nonatomic  )  UIButton         *downloadBtn;
 /** 下载按钮点击回调block */
 @property (nonatomic, copy  ) ZFBtnClickBlock  btnClickBlock;
 /** 下载信息模型 */

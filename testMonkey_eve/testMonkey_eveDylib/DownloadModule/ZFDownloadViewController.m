@@ -71,15 +71,13 @@
     self.tableView.contentInset = UIEdgeInsetsMake(0, 0, -49, 0);
     DownloadManager.downloadDelegate = self;
     
+//    [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadedCell" bundle:nil] forCellReuseIdentifier:@"downloadedCell"];
     
+//    [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadingCell" bundle:nil] forCellReuseIdentifier:@"downloadingCell"];
     
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadedCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"downloadedCell"];
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"ZFDownloadingCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"downloadingCell"];
-    
-//    [self.tableView registerClass:[ZFDownloadedCell class] forCellReuseIdentifier:@"downloadedCell"];
-//
-//    [self.tableView registerClass:[ZFDownloadingCell class] forCellReuseIdentifier:@"downloadingCell"];
+    [self.tableView registerClass:[ZFDownloadedCell class] forCellReuseIdentifier:@"downloadedCell"];
+
+    [self.tableView registerClass:[ZFDownloadingCell class] forCellReuseIdentifier:@"downloadingCell"];
     
 }
 
@@ -204,15 +202,6 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    UITableViewCell *cell            = (UITableViewCell *)sender;
-    NSIndexPath *indexPath           = [self.tableView indexPathForCell:cell];
-    ZFFileModel *model                 = self.downloadObjectArr[indexPath.section][indexPath.row];
-    // 文件存放路径
-    NSString *path                   = FILE_PATH(model.fileName);
-    NSURL *videoURL                  = [NSURL fileURLWithPath:path];
-
-//    MoviePlayerViewController *movie = (MoviePlayerViewController *)segue.destinationViewController;
-//    movie.videoURL                   = videoURL;
 }
 
 

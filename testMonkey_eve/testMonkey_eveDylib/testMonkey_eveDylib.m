@@ -19,6 +19,9 @@
 
 #import <ZFDownload/ZFDownloadManager.h>
 
+#import "Popview.h"
+#import "TVList.h"
+
 @interface CustomViewController
 
 -(NSString*)getMyName;
@@ -35,8 +38,11 @@
 
 - (void)download:(UIButton *)sender;
 
-- (void)playerDownload:(NSString *)url;
+- (void)showTVList:(UIButton *)sender;
 
+- (void)playerDownload:(NSString *)url withVideoName:(NSString *)videoName;
+
+@property (nonatomic, copy) NSString *videoName;
 
 @end
 
@@ -92,6 +98,9 @@ CHClassMethod(0, id, AD_dataManager, shareInstance) {
 
 CHDeclareClass(newVideoPlayViewController);
 
+
+
+
 CHDeclareMethod1(void, newVideoPlayViewController, download, UIButton *, sender) {
     NSLog(@"click me");
     
@@ -102,12 +111,34 @@ CHDeclareMethod1(void, newVideoPlayViewController, download, UIButton *, sender)
     }
     
     NSString *videoUrl = [(newVideoPlayViewController *)obj videoUrl];
-    [self playerDownload:videoUrl];
+    [self playerDownload:videoUrl withVideoName:self.videoName];
 }
 
-CHDeclareMethod1(void, newVideoPlayViewController, playerDownload, NSString *, url) {
+CHDeclareMethod1(void, newVideoPlayViewController, showTVList, UIButton *,sender) {
+    NSLog(@"");
     
-    NSString *name = [url lastPathComponent];
+    TVList *list = [[TVList alloc] initWithBounds:CGRectMake(0, 0, 200, 250)];
+    
+    id obj = sender;
+    
+    while (![obj isKindOfClass:[UIViewController class]]) {
+        obj = [obj nextResponder];
+    }
+    
+    UIView *view = [(UIViewController *)obj view];
+    
+    Popview *popView = [[Popview alloc] initWithFrame:view.bounds];
+    
+    popView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    
+    [popView popView:[list view]];
+    
+    [popView showPopViewInView:view atPoint:[view convertPoint:sender.center fromView:sender.superview]];
+    
+}
+
+CHDeclareMethod2(void, newVideoPlayViewController, playerDownload, NSString *, url, withVideoName, NSString *, fileName) {
+    NSString *name = fileName;
     [[ZFDownloadManager sharedDownloadManager] downFileUrl:url filename:name fileimage:nil];
     // 设置最多同时下载个数（默认是3）
     [ZFDownloadManager sharedDownloadManager].maxCount = 4;
@@ -118,6 +149,7 @@ CHDeclareMethod1(void, newVideoPlayViewController, playerDownload, NSString *, u
 CHOptimizedMethod3(self, id, newVideoPlayViewController, initWithUrl, NSString *, arg1, VideoType, id, arg2, data, id, arg3) {
     id obj = CHSuper3(newVideoPlayViewController, initWithUrl, arg1, VideoType, arg2, data, arg3);
     [self setVideoUrl:arg1];
+    [self setVideoName:[arg3 title]];
     return obj;
 }
 
@@ -127,10 +159,12 @@ CHOptimizedMethod0(self, void, newVideoPlayViewController, viewDidLoad) {
     UIView *controlView = view.subviews[1];
     if (controlView) {
         
-        MPVolumeView *volumeView = [ [MPVolumeView alloc] init] ;
-        
-        [volumeView setShowsVolumeSlider:NO];
-        [volumeView sizeToFit];
+        UIButton *volumeView = [UIButton buttonWithType:UIButtonTypeCustom] ;
+        [volumeView setTitle:@"Airplay" forState:UIControlStateNormal];
+        volumeView.layer.borderWidth = 1.0f;
+        volumeView.layer.borderColor = [UIColor whiteColor].CGColor;
+        volumeView.layer.cornerRadius = 4;
+        [volumeView addTarget:self action:@selector(showTVList:) forControlEvents:UIControlEventTouchUpInside];
         [controlView addSubview:volumeView];
 
 
@@ -163,6 +197,8 @@ CHOptimizedMethod0(self, void, newVideoPlayViewController, viewDidLoad) {
     }
 }
 
+
+CHPropertyCopyNonatomic(newVideoPlayViewController, NSString *, videoName, setVideoName);
 
 static __attribute__((constructor)) void entry(){
     NSLog(@"\n               🎉!!！congratulations!!！🎉\n👍----------------insert dylib success----------------👍");
@@ -197,9 +233,15 @@ static __attribute__((constructor)) void entry(){
     CHLoadLateClass(UIPasteboard);
     //hook +[UIPasteboard generalPasteboard]方法
     CHClassHook0(UIPasteboard, generalPasteboard);
-    
+}
+
+CHConstructor {
     CHLoadLateClass(newVideoPlayViewController);
     CHClassHook0(newVideoPlayViewController, viewDidLoad);
     CHClassHook3(newVideoPlayViewController, initWithUrl, VideoType, data);
+    
+    CHHook0(newVideoPlayViewController, videoName);
+    CHHook1(newVideoPlayViewController, setVideoName);
 }
+
 

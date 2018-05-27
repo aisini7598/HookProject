@@ -76,8 +76,7 @@ static dispatch_queue_t _queue = NULL;
 }
 
 - (void)stop {
-    
-    
+    [self.udpSocket close];
 }
 
 - (void)searchDevice {
