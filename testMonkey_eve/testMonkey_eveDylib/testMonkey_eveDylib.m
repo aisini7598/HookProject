@@ -111,13 +111,14 @@ CHDeclareMethod1(void, newVideoPlayViewController, download, UIButton *, sender)
     }
     
     NSString *videoUrl = [(newVideoPlayViewController *)obj videoUrl];
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:videoUrl]];
+    
     [self playerDownload:videoUrl withVideoName:self.videoName];
 }
 
 CHDeclareMethod1(void, newVideoPlayViewController, showTVList, UIButton *,sender) {
     NSLog(@"");
-    
-    TVList *list = [[TVList alloc] initWithBounds:CGRectMake(0, 0, 200, 250)];
     
     id obj = sender;
     
@@ -125,15 +126,27 @@ CHDeclareMethod1(void, newVideoPlayViewController, showTVList, UIButton *,sender
         obj = [obj nextResponder];
     }
     
-    UIView *view = [(UIViewController *)obj view];
+    NSString *videoUrl = [(newVideoPlayViewController *)obj videoUrl];
     
-    Popview *popView = [[Popview alloc] initWithFrame:view.bounds];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:videoUrl]];
     
-    popView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    
-    [popView popView:[list view]];
-    
-    [popView showPopViewInView:view atPoint:[view convertPoint:sender.center fromView:sender.superview]];
+//    TVList *list = [[TVList alloc] initWithBounds:CGRectMake(0, 0, 200, 250)];
+//
+//    id obj = sender;
+//
+//    while (![obj isKindOfClass:[UIViewController class]]) {
+//        obj = [obj nextResponder];
+//    }
+//
+//    UIView *view = [(UIViewController *)obj view];
+//
+//    Popview *popView = [[Popview alloc] initWithFrame:view.bounds];
+//
+//    popView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//
+//    [popView popView:[list view]];
+//
+//    [popView showPopViewInView:view atPoint:[view convertPoint:sender.center fromView:sender.superview]];
     
 }
 
@@ -167,7 +180,14 @@ CHOptimizedMethod0(self, void, newVideoPlayViewController, viewDidLoad) {
         [volumeView addTarget:self action:@selector(showTVList:) forControlEvents:UIControlEventTouchUpInside];
         [controlView addSubview:volumeView];
 
-
+        
+//        MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(0, 100, 50, 50)];
+//        volumeView.showsVolumeSlider = NO;
+//        [volumeView sizeToFit];
+//        [controlView addSubview:volumeView];
+        
+        
+        
         UIButton *downloadButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [downloadButton setTitle:@"下载" forState:UIControlStateNormal];
         downloadButton.layer.borderWidth = 1.0f;
@@ -186,7 +206,6 @@ CHOptimizedMethod0(self, void, newVideoPlayViewController, viewDidLoad) {
                 if ([tmpButton.titleLabel.text isEqualToString:@"高清"]) {
                     downloadButton.titleLabel.font = tmpButton.titleLabel.font;
                     downloadButton.frame = CGRectOffset(tmpButton.frame, -10, 0);
-                    
                     volumeView.frame = CGRectOffset(downloadButton.frame, -tmpButton.frame.size.width - 10, 0);
                     *stop = YES;
                 }
@@ -205,7 +224,7 @@ static __attribute__((constructor)) void entry(){
     
     [[NSNotificationCenter defaultCenter] addObserverForName:UIApplicationDidFinishLaunchingNotification object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
         
-        CYListenServer(6666);
+//        CYListenServer(6666);
     }];
     
     
